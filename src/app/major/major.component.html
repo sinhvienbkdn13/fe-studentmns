@@ -1,0 +1,29 @@
+<!--<ul class="heroes">-->
+<!--  <li *ngFor="let major of majors">-->
+<!--    <a routerLink="/majors/{{major.id}}">-->
+<!--      <span class="badge">{{major.id}}</span> {{major.name}}-->
+<!--    </a>-->
+<!--  </li>-->
+<!--</ul>-->
+<a routerLink="/add">Create Link</a>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Detail Link</th>
+  </tr>
+  <tr *ngFor="let major of majors">
+    <td>
+      <p>{{major.id}}</p>
+    </td>
+    <td>
+      {{major.alias}}
+    </td>
+    <td>
+      <a routerLink="/majors/{{major.id}}">
+        Detail Link
+      </a>
+    </td>
+  </tr>
+</table>
